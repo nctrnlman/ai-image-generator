@@ -94,7 +94,7 @@ function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-between relative">
       <SpaceBackground />
-      <div className="mb-4 text-5xl font-bold text-gray-300 pt-10">
+      <div className="mb-4 text-3xl md:text-5xl font-bold text-gray-300 pt-10">
         AI Generator Image
         <div className="flex justify-end">
           <span className="block text-sm font-normal mt-2">
@@ -131,7 +131,7 @@ function Home() {
 
         <input
           type="text"
-          placeholder="Generate an image from your text..."
+          placeholder="Imagine a scene..."
           value={userInput}
           onChange={(e) => setUserInput(e.target.value)}
           onKeyDown={handleInputKeyDown}
