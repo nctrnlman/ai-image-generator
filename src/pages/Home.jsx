@@ -14,7 +14,7 @@ function Home() {
   const [generatedImage, setGeneratedImage] = useState(null);
   const [userInput, setUserInput] = useState("");
   const [downloadUrl, setDownloadUrl] = useState(null);
-  const apiKey = process.env.API_KEY;
+  const apiKey = import.meta.env.VITE_API_KEY;
 
   const defaultImageParams = {
     n: 1,
