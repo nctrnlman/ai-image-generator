@@ -47,7 +47,7 @@ function Home() {
       }
 
       setLoading(true);
-      const apiUrl = "https://api.openai.com/v1/images/generations";
+      const apiUrl = import.meta.env.VITE_API_URL;
 
       const response = await axios.post(
         apiUrl,
