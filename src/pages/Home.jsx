@@ -14,7 +14,7 @@ function Home() {
   const [generatedImage, setGeneratedImage] = useState(null);
   const [userInput, setUserInput] = useState("");
   const [downloadUrl, setDownloadUrl] = useState(null);
-  const apiKey = "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";
+  const apiKey = process.env.API_KEY;
 
   const defaultImageParams = {
     n: 1,
